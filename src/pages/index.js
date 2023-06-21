@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import TripCard from "../components/tripCard/TripCard";
 import styles from "./styles.module.css";
-// import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 
 const MainPage = ({events}) => {
@@ -11,7 +12,7 @@ const MainPage = ({events}) => {
 
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
     
     <div>
       <div className={styles.cardsWrapper}>
@@ -28,6 +29,8 @@ const MainPage = ({events}) => {
       ))} 
       </div> 
     </div>
+    
+    <Footer />
     </>
   );
 };
