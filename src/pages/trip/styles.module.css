@@ -1,6 +1,9 @@
 .pageWrapper{
     padding-left: 30px;
     padding-right: 30px;
+    min-height: calc(100vh - 140px);
+    color:rgb(34, 57, 34);
+    text-align: center;
 }
 
 .wrapper{
@@ -16,18 +19,10 @@
 
 .image{
     width: 100%;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
-    border: 5px solid rgb(28, 55, 105);
     box-sizing: border-box;
-}
-
-
-.contentWrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top:20px;
 }
 
 .info{
@@ -36,3 +31,38 @@
     justify-content: space-between;
     padding: 10px;
 }
+
+.pageWrapper button{
+    padding: 10px;
+    max-width:fit-content;
+    align-self:flex-end;
+    background-color: rgb(225, 218, 88);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pageWrapper button:hover{
+    background-color: rgb(187, 181, 71);
+
+}
+
+.surpriseText {
+    color: rgb(233, 137, 13);
+  }
+
+  .surpriseButton {
+    animation: surpriseAnimation 3s infinite;
+    color: rgb(61, 128, 106);
+  }
+  
+  @keyframes surpriseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

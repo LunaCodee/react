@@ -15,20 +15,25 @@ const MainPage = ({events}) => {
     <Navbar />
     
     <div>
-      <div className={styles.cardsWrapper}>
-        {trips.map((trip) => (
-          <div key={trip.id}>
-          <TripCard
-            id={trip.id}
-            destination={trip.Destination}
-            date={trip.Date}
-            duration={trip.Duration}
-            imageUrl={trip.ImageUrl}
-          />
-          </div>
-      ))} 
-      </div> 
-    </div>
+        <div className={styles.cardsWrapper}>
+          {trips.length > 0 ? (
+            trips.map((trip) => (
+              <div key={trip.id}>
+                <TripCard
+                  id={trip.id}
+                  destination={trip.Destination}
+                  date={trip.Date}
+                  duration={trip.Duration}
+                  imageUrl={trip.ImageUrl}
+                />
+              </div>
+            ))
+          ) : (
+            <p>No trips available</p>
+          )}
+        </div>
+      </div>
+
     
     <Footer />
     </>

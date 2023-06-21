@@ -1,0 +1,58 @@
+.tripForm{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top:100px;
+    min-height: calc(100vh - 240px);
+}
+
+.tripForm input{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 60%;
+}
+
+.tripForm input:hover{
+    background-color: rgb(244, 248, 236);
+}
+
+.tripForm button{
+    padding: 8px;
+    max-width:fit-content;
+    align-self:center;
+    background-color: rgb(230, 234, 220);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tripForm button:hover{
+    background-color: rgb(155, 154, 141);
+
+}
+
+.errorMessage{
+    color: rgb(148, 25, 25);
+}
+
+.surpriseText {
+    color: rgb(233, 137, 13);
+  }
+
+.surpriseButton {
+    animation: surpriseAnimation 3s infinite;
+    color: rgb(61, 128, 106);
+  }
+  
+  @keyframes surpriseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+}
+}

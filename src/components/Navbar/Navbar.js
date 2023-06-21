@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import burger from '../../assets/Hamburger_icon.svg.png';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo.png';
 import { useState } from "react";
 
 
